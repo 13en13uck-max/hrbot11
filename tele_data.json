@@ -1,0 +1,17 @@
+{
+  "tele_ranks": {
+    "home": "vip"
+  },
+  "teleports": {
+    "home": {
+      "facing": 0.0,
+      "x": 1.0,
+      "y": 2.0,
+      "z": 3.0
+    }
+  },
+  "user_ranks": {
+    "alice": "vip",
+    "tester": "owner"
+  }
+}

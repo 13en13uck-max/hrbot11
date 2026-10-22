@@ -1,0 +1,48 @@
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\liamb\Desktop\hrbot\main.py", line 38, in <module>
+  |     main()
+  |   File "C:\Users\liamb\Desktop\hrbot\main.py", line 34, in main
+  |     run()
+  |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\click\core.py", line 1631, in __call__
+  |     return self.main(*args, **kwargs)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\click\core.py", line 1552, in main
+  |     rv = self.invoke(ctx)
+  |          ^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\click\core.py", line 1415, in invoke
+  |     return ctx.invoke(self.callback, **ctx.params)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\click\core.py", line 910, in invoke
+  |     return callback(*args, **kwargs)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\highrise\__main__.py", line 89, in run
+  |     return arun(main(definitions))
+  |            ^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+  |     return runner.run(main)
+  |            ^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+  |     return self._loop.run_until_complete(task)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+  |     return future.result()
+  |            ^^^^^^^^^^^^^^^
+  |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\highrise\__main__.py", line 93, in main
+  |     async with TaskGroup() as tg:
+  |   File "C:\Users\liamb\AppData\Local\Programs\Python\Python311\Lib\asyncio\taskgroups.py", line 147, in __aexit__
+  |     raise me from None
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Exception Group Traceback (most recent call last):
+    |   File "C:\Users\liamb\Desktop\hrbot\.venv\Lib\site-packages\highrise\__main__.py", line 106, in bot_runner
+    |     async with TaskGroup() as tg:
+    |   File "C:\Users\liamb\AppData\Local\Programs\Python\Python311\Lib\asyncio\taskgroups.py", line 147, in __aexit__
+    |     raise me from None
+    | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+    +-+---------------- 1 ----------------
+      | Traceback (most recent call last):
+      |   File "C:\Users\liamb\Desktop\hrbot\bot.py", line 1068, in on_start
+      |     await self.highrise.chat(random.choice(JOIN_MESSAGES))
+      |                                            ^^^^^^^^^^^^^
+      | NameError: name 'JOIN_MESSAGES' is not defined. Did you mean: 'CHILL_MESSAGES'?
+      +------------------------------------

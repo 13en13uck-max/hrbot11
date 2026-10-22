@@ -1,0 +1,39 @@
+{
+  "owner_id": "test-user",
+  "tmdb_key": "510da5917461c6982db4ecb94696e030",
+  "roles": {
+    "owner": {
+      "privilege": "host",
+      "cost": 0
+    },
+    "coowner": {
+      "privilege": "host",
+      "cost": 0
+    },
+    "admin": {
+      "privilege": "admin",
+      "cost": 0
+    },
+    "seniormod": {
+      "privilege": "admin",
+      "cost": 0
+    },
+    "mod": {
+      "privilege": "admin",
+      "cost": 0
+    },
+    "dj": {
+      "privilege": "vip",
+      "cost": 0
+    },
+    "vip": {
+      "privilege": "vip",
+      "cost": 100,
+      "duration_hours": 24
+    },
+    "guest": {
+      "privilege": "guest",
+      "cost": 0
+    }
+  }
+}
