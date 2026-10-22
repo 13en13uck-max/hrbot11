@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: hrbot
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py startbot "$ROOM_ID" "$API_TOKEN"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: ROOM_ID
+        sync: false
+      - key: API_TOKEN
+        sync: false
